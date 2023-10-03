@@ -6,12 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite, Tailwind, VanillaJS template</title>
   </head>
-  <body class="font-jakarta">
-    <div>
-      <div class="bg-white p-4 text-sm">
-        <header class="py-6">
+  <body class="font-jakarta bg-gray-250">
+    <div class="py-12">
+      <div
+        class="bg-white p-6 md:p-10 text-sm md:text-base max-w-2xl mx-auto rounded-2xl shadow-xl"
+      >
+        <header class="pb-6 md:pb-8">
           <div class="flex items-center justify-between">
-            <h1 class="font-bold text-2xl">Notifications</h1>
+            <div class="flex gap-3 items-center">
+              <h1 class="font-bold text-2xl">Notifications</h1>
+              <p
+                class="bg-blue-500 text-white text-2xl px-3 rounded-lg font-bold"
+              >
+                3
+              </p>
+            </div>
             <a href="#" class="text-blue-400 hover:text-blue-500"
               >Mark all as read</a
             >
@@ -23,18 +32,20 @@
               <div class="flex items-start gap-3">
                 <div class="flex-shrink-0">
                   <img
-                    class="h-12"
+                    class="h-12 md:h-14"
                     src="assets/images/avatar-mark-webber.webp"
                   />
                 </div>
                 <div>
                   <p class="text-blue-400">
                     <span
-                      class="text-bold text-blue-800 text-base font-bold mr-1"
+                      class="text-bold text-blue-800 text-base md:text-lg font-bold mr-1"
                       >Mark Webber</span
                     >
                     reacted to your recent post
                     <span class="font-bold">My first tournament today!</span>
+
+                    <span class="text-2xl text-red">•</span>
                   </p>
                   <span class="text-blue-300"> 1m ago </span>
                 </div>
@@ -44,18 +55,20 @@
               <div class="flex items-start gap-3">
                 <div class="flex-shrink-0">
                   <img
-                    class="h-12"
+                    class="h-12 md:h-14"
                     src="assets/images/avatar-angela-gray.webp"
                   />
                 </div>
                 <div>
                   <p class="text-blue-400">
                     <span
-                      class="text-bold text-blue-800 text-base font-bold mr-1"
+                      class="text-bold text-blue-800 text-base md:text-lg font-bold mr-1"
                       >Angela Gray</span
                     >
                     followed you
+                    <span class="text-2xl text-red">•</span>
                   </p>
+
                   <span class="text-blue-300"> 5m ago </span>
                 </div>
               </div>
@@ -64,18 +77,19 @@
               <div class="flex items-start gap-3">
                 <div class="flex-shrink-0">
                   <img
-                    class="h-12"
+                    class="h-12 md:h-14"
                     src="assets/images/avatar-jacob-thompson.webp"
                   />
                 </div>
                 <div>
                   <p class="text-blue-400">
                     <span
-                      class="text-bold text-blue-800 text-base font-bold mr-1"
+                      class="text-bold text-blue-800 text-base md:text-lg font-bold mr-1"
                       >Jacob Thompson</span
                     >
                     has joined your group
-                    <span class="text-blue-500 font-bold">Chess Club</span>
+                    <span class="text-blue-500 font-bold ml-1">Chess Club</span>
+                    <span class="text-2xl text-red">•</span>
                   </p>
                   <span class="text-blue-300"> 1 day ago </span>
                 </div>
@@ -85,14 +99,14 @@
               <div class="flex items-start gap-3">
                 <div class="flex-shrink-0">
                   <img
-                    class="h-12"
+                    class="h-12 md:h-14"
                     src="assets/images/avatar-rizky-hasanuddin.webp"
                   />
                 </div>
                 <div>
                   <p class="text-blue-400">
                     <span
-                      class="text-bold text-blue-800 text-base font-bold mr-1"
+                      class="text-bold text-blue-800 text-base md:text-lg font-bold mr-1"
                       >Rizky Hasanuddin
                     </span>
                     has sent you a private message
@@ -111,14 +125,14 @@
               <div class="flex items-start gap-3">
                 <div class="flex-shrink-0">
                   <img
-                    class="h-12"
+                    class="h-12 md:h-14"
                     src="assets/images/avatar-kimberly-smith.webp"
                   />
                 </div>
                 <div>
                   <p class="text-blue-400">
                     <span
-                      class="text-bold text-blue-800 text-base font-bold mr-1"
+                      class="text-bold text-blue-800 text-base md:text-lg font-bold mr-1"
                       >Kimberly Smith
                     </span>
                     commented on your picture
@@ -126,7 +140,10 @@
                   <span class="text-blue-300"> 1 week ago </span>
                 </div>
                 <div class="flex-shrink-0">
-                  <img class="h-12" src="/assets/images/image-chess.webp" />
+                  <img
+                    class="h-12 md:h-14"
+                    src="/assets/images/image-chess.webp"
+                  />
                 </div>
               </div>
             </li>
@@ -134,14 +151,14 @@
               <div class="flex items-start gap-3">
                 <div class="flex-shrink-0">
                   <img
-                    class="h-12"
+                    class="h-12 md:h-14"
                     src="assets/images/avatar-nathan-peterson.webp"
                   />
                 </div>
                 <div>
                   <p class="text-blue-400">
                     <span
-                      class="text-bold text-blue-800 text-base font-bold mr-1"
+                      class="text-bold text-blue-800 text-base md:text-lg font-bold mr-1"
                       >Nathan Peterson
                     </span>
                     reacted to your recent post
@@ -156,12 +173,15 @@
             <li class="bg-white p-5 rounded-lg mt-4">
               <div class="flex items-start gap-3">
                 <div class="flex-shrink-0">
-                  <img class="h-12" src="assets/images/avatar-anna-kim.webp" />
+                  <img
+                    class="h-12 md:h-14"
+                    src="assets/images/avatar-anna-kim.webp"
+                  />
                 </div>
                 <div>
                   <p class="text-blue-400">
                     <span
-                      class="text-bold text-blue-800 text-base font-bold mr-1"
+                      class="text-bold text-blue-800 text-base md:text-lg font-bold mr-1"
                       >Anna Kim
                     </span>
                     left the group
