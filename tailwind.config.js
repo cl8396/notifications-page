@@ -27,4 +27,5 @@ export default {
     extend: {},
   },
   plugins: [],
+  base: '/notifications-page/',
 };
